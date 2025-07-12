@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Page</title>
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, #0a0a0a, #1a1a2e);
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+            width: 200px;
+            height: 100vh;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .nav-bar a, .nav-bar button {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .nav-bar a:hover, .nav-bar button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .main-content {
+            margin-left: 200px;
+            width: calc(100% - 200px);
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 95%;
+            height: 95%;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="index.html">Project Warrant</a>
+        <a href="/static/games.html">Grades</a>
+        <a href="/static/proxies.html">Proxies</a>
+        <a href="/static/chat.html">Chat</a>
+</div>
+
+<div class="main-content">
+    <iframe src="https://doge.dinprima.ro/mastery?auth=waqqhwn" title="Chat Window"></iframe>
+</div>
+
+</body>
+</html>
